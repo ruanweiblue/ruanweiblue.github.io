@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+           div{width: 432px;height: 332px; position:relative; background: url(./img/1.jpg) no-repeat;top: 0px;left: 100px;}
+          #text{width:190px; height: 25px;position: absolute;top:195px;left:134px;}
+          #passw{width:190px; height: 24px;position: absolute;top:225px;left:134px;}
+          #butt{width:197px;height:30px;background:#09a4dd;position: absolute;top:288px;left:134px;outline: none;border:0;color: #fff;
+          }
+          
+		</style>
+	</head>
+	<body>
+	 <div>
+		<input type="text" name="" id="text" value="qq号/手机/邮箱" />
+		<input type="password" name="password" id="passw" value="" />
+		<input type="button" name="" id="butt" value="登陆" />
+	 </div>
+		<script type="text/javascript">
+		var inps=document.getElementsByTagName('input');
+		inps[2].onclick=function(){
+		  var va=inps[0].value;
+		  var powk=inps[1].value;
+		    if(va==''){
+		    	alert('请输入qq号')
+		       return ;
+		       
+		     }else if(powk==''){
+		    	alert('请输入密码')
+		    	return ;
+		   
+		     }else if(va.length<5||va.length>11){
+                 alert('qq号的长度有误,不能小于5或大于11位');
+		      return ;	
+             }else if(va.substring(0,1)==='0'){
+		  	  alert('第一个数字不能为0');
+		  	  return ;		
+		    }else if(detectNum(va)){
+				alert('登陆成功');
+				
+			}else{
+				alert('请正确输入qq,不能有特殊字符包括空格');
+				return ;
+			}
+
+		 
+	    }
+	    var n=inps[0].value;
+	    // inps[0]获取焦点的时候判断之前的内容是不是现在的内容，
+	     //如果是就清空。不是就不清空
+	    inps[0].onfocus=function(){
+	    	if(inps[0].value==n){
+	    	 inps[0].value='';
+	    	}else{
+	    		inps[0].select()//如果不是之前的内容获取焦点的时候选中内容
+	    	}
+	    }
+	    //inps[0]失去焦点的时候判断之前的内容是不是空的
+	    //如果是就等之前的内容
+	    inps[0].onblur=function(){
+	    	if(inps[0].value===''){
+	    	  inps[0].value=n;
+	    	}
+	    	
+	    }
+
+	   function detectNum(str){
+			var n=0;
+			 for(var i=0;i<str.length;i++){
+			 	n=str.charCodeAt(i)//unicode编码的范围;
+			 	//判断字符串的内容是不是在48-57之间
+			 	//如果不是就阻止代码运行;
+			 	if(n<48||n>57){//数字0-9 unicode编码的范围是在48-57之间;
+			 		
+			 		return false;
+			 	}
+			 	
+			 }
+			   return true;
+			}
+		</script>
+	</body>
+</html>
