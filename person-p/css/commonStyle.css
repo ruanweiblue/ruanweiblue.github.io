@@ -1,0 +1,191 @@
+           body,html{  
+
+                         position: relative;
+                         height:100%;
+                         width:100%;
+                        /* overflow:scroll;*/
+                         /*overflow-x:hidden;*/
+                         
+                  }
+              #bdy{    
+                         width:100%; 
+                         height: 100%;
+
+                 }
+       
+        .contenthide{
+                         width: 100%;
+                         position: absolute;
+                         top: 0px;
+                         left: 0px;
+                         transition: 0.2s;
+                    }
+              .boxshow{ 
+                        position: absolute;
+                        top:0px;
+                        left:300px;
+                        overflow: hidden;
+                        transition:0.5s;
+                  }
+/********************************nav导航开始**********************/
+
+          #nav_btn{  
+                        width: 44px;
+                        height: 29px;
+                        background: url(../images/nav-open.png);
+                        cursor: pointer;
+                        transition:all 0.7s linear; 
+                        position:absolute;
+                        top:0;
+                        left: 0;
+                        z-index: 1;
+                        opacity:1;
+                    }
+
+              .formhide{    
+                        width: 300px;
+                        background: #222;
+                        padding-top:50px;
+                        position:fixed;
+                        left:-300px; 
+                        height:100%;
+                        top:0;
+                        transition:0.3s linear;
+                        
+                    }
+
+            #nav_bg{ 
+                        width: 300px;
+                        z-index:10;
+                        left:-300px; 
+                        /*height:590px;*/
+                        top:0;
+                        transition:0.5s linear;
+                   
+
+                   }
+            #nav h1 .logoImg{
+
+                         display: block;
+                         width: 92px;
+                         height:34px; 
+                         background: url(../images/logo.png);
+                         margin: 0 auto;
+                   }
+
+            #nav_tab{ 
+                          margin-top:55px;
+                  }
+
+            #nav_tab a{
+                         display:block;
+                         width: 100%;
+                         height:48px;
+                         color: #aaa;
+                         text-align: center;
+                         font-size: 1.125em; 
+                        
+                     }
+
+            #nav_tab a:hover{
+                        color: #fff;
+                    }
+                    
+            #weib li{ 
+                        width: 100%;
+                        height:40px;
+                    }
+
+            #weib a{
+                        display:block;
+                        width: 38px;
+                        height: 38px; 
+                        margin:20px auto;
+                   }
+            #weib .weix{
+                        background: url(../images/share-weixin1.png);
+                   }
+            #weib .webo{
+                        background: url(../images/share-weibo1.png);
+                   }
+            #weib .weix:hover{
+                        background: url(../images/share-weixin2.png);
+                   }
+            #weib .webo:hover{
+                        background: url(../images/share-weibo2.png);
+                   }
+            .boxstyle{width:77.761%;
+                      height: 590px;
+                      position: absolute;
+                      top:0px;
+                      left:300px;
+                      overflow: hidden;
+                      transition:0.5s;
+                  }
+            .cte_box{ width: 100%;
+                       height: 590px;
+                       position: absolute;
+                       top: 0px;
+                       left: 0px;
+                       overflow: hidden;
+                       transition: 0.5s;
+                    }
+    /*******************************nav导航结束***********************************************/
+                     
+
+                      /*************footer开始**********************/       
+ #footer{
+
+                       width:100%;
+                       height:63px;
+                       background:#dddddd;
+                       position: relative;
+                       top:0;
+
+
+         }
+
+#footer p{                  
+                           
+                       font-size: 18px;
+                       position: absolute;
+                       left: 2%;
+                       top:35%;
+
+         }
+.footer_box{
+
+                        position: absolute;
+                        top:35%;
+                        left:45%;
+
+           }
+  .img_pa{
+                        width:20px;
+                        height: 20px;
+                        position: absolute;
+                        top:0;
+                        left:-13%;
+
+        }
+.footer_box span{           
+
+                        color:#939393;
+                        font-size: 14px;
+
+
+               }
+          #top{
+                        width: 72px;
+                        height: 62px;
+                        background: yellow;
+                        position: absolute;
+                        top:0;
+                        right: 0;
+                        background: url(../images/top.jpg);          
+
+              }
+    #top:hover{
+                       background: url(../images/top-hover.jpg);
+              }
+            /*************footer结束**********************/

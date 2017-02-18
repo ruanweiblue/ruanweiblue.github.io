@@ -1,0 +1,949 @@
+
+            
+ /*******************************************轮播图开始*****************************************/
+       #imgbt {
+                       height: 590px;
+                       width: 100%;
+                       position: relative;
+                       overflow: hidden;
+               }
+        
+       #imgbt img{   
+                       height: 590px;
+
+                }
+       #annlu{         width:58px;
+                       height:15px;
+                       position: absolute;
+                       bottom:8px;
+                       left: 48%;
+              }
+       #annlu li{     
+                      width: 15px;
+                      height: 15px;
+                      float: left;
+                      border-radius: 5%;
+                      background:#f5f5f5;
+                      margin-right:4px;
+                }
+       #annlu .active{background:yellow;}
+/***********************轮播图结束**************************/
+         #about{
+
+                        width:100%;
+                        margin:0 auto;
+                        background:#fff;
+                        margin-top:20px;
+                        height: 3350px;
+                        
+
+ 
+               }
+    /**************about_us开始*************************/
+ #about .about_us{
+                        width: 1164px;
+                        height:498px;
+                        margin:auto;
+                        /*margin-left: 94px;*/
+                        max-width: 1200px;
+
+ 
+               }
+
+     .about_us_a{
+                        width:700px;
+                        height:100%;
+                        background:#222;
+                        padding-left:67px;
+                        margin-left: 0.8%;
+
+               }
+    .about_us_b{
+                        width:379px;
+                        height:100%;
+                        
+               } 
+.about_us_a p{
+                        width:673px;
+                        font-size:16px;
+                        color:#a5a5a5;
+                        line-height: 23px;
+                        font-family: inherit;
+
+            }  
+.about_us_a h3{
+                        font-size:2.25em;
+                        color:#fff;
+                        margin-top:70px;
+                        margin-bottom: 20px;
+                        font-family: inherit;
+
+            }
+.about_us_a h4{
+                        font-size:18px;
+                        color:#fff;
+                        margin-top:76px;
+                        margin-bottom: 28px;
+                        font-family: inherit;
+
+            }    
+
+.about_us_a #david-roll-surface{
+                      
+                        width:196px;
+                        height:45px;
+                        border:1px solid #888;
+                        margin-top:58px;
+                        line-height:45px;
+                        font-size:16px;
+                        color:#a5a5a5;
+                        text-align: center;
+                        font-family: inherit;
+                        position:relative;
+                        cursor: pointer;
+
+                        
+            }
+ #david-roll-surface .ma_bg_color{  
+                        display:block;
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        width:0%;
+                        height:100%;
+                        transition:1s;
+
+
+           } 
+#david-roll-surface .as_bg{
+                        display:block;
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        width:100%;
+                        height:100%;
+                        background:#888;
+                        transition:1s;
+                    
+
+
+                }
+
+#david-roll-surface i{
+                        width:194px;
+                        height:22px;
+                        display:block;
+                        position: absolute;
+                        font-weight: bold;
+                        font: inherit;
+                        font-size:18px;
+                        top:0;
+                        left:0;
+                        
+                  }
+         
+#about_us_b_top img {
+                        width:377px;
+                        height:241px;
+                        z-index:1;
+                       
+
+                       
+                  }
+#about_us_b_top {
+                        width:377px;
+                        height:241px;
+                        margin-bottom:15px;
+                        overflow:hidden;
+                        position:relative;
+
+                       
+                 }
+#about_us_b_bot{
+                        width:377px;
+                        height:241px;
+                        overflow:hidden;
+                        position:relative;
+                 }
+
+#about_us_b_bot img{
+                        width:377px;
+                        height:241px;
+                        z-index:1;
+                                                  
+                 }
+
+           .abo_p{
+                        width:347px;
+                        height: 151px;
+                        padding-top:90px;
+                        padding-left:30px;
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        opacity:0;
+                        z-index:-1;
+                    }
+
+#about_us_b_top .p_noe{
+                        font-size:18px;
+                        font-weight:bold;
+                        padding-bottom: 13px;
+                        color:#000;
+                }
+#about_us_b_top i{
+                         font: inherit;
+                         font-size:18px;
+                        
+                        
+
+
+               }
+#about_us_b_bot i{
+                        font: inherit;
+                        font-size:18px;
+
+               }
+#about_us_b_bot .p_tow{
+                        font-size:18px;
+                        font-weight:bold;
+                        padding-bottom: 13px;
+                        color:#000;
+              }
+           .abo_d{
+                        width:347px;
+                        height: 151px;
+                        background:#ddd3cf;
+                        padding-top:90px;
+                        padding-left:30px;
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        z-index:-1;
+                        transition:1s;
+                        opacity:0;
+
+                        
+                       
+                  }
+        .aboPacity{  
+                        width:347px;
+                        height: 151px;
+                        background:#ddd3cf;
+                        padding-top:90px;
+                        padding-left:30px;
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        opacity:0.9;
+                        transition:1s;
+                        z-index:2;
+                    }
+
+#about_us_b_bot img:hover{
+                         width:395px;
+                         height:260px;
+                         transition:0.5s;
+                         z-index:1;
+                    }
+#about_us_b_top img:hover{
+                          width:395px;
+                          height:260px;
+                          transition:0.5s;
+                          z-index:1;
+                    }
+
+            #about_a{
+
+                          width:100%;
+                          height:502px;
+                        
+
+                 }
+               
+#about_a .about_box{
+
+                          width:1166px;
+                          height:100%;
+                          margin:15px auto;
+                          /*margin-left:85px;*/
+
+                 }
+   .about_box li{
+                          width:377px;
+                          height:241px;
+                          float:left;
+                          margin-left:10px;
+                          margin-bottom:17px;
+                          overflow:hidden;
+                          position:relative;     
+
+                }
+
+ .about_box li img{       
+                           width:377px;
+                           height:241px;
+                           z-index:1;
+                         
+
+                 }
+.about_box li img:hover{
+                            width:395px;
+                            height:260px;
+                            transition:0.5s;
+                            z-index: 1;
+
+                   }
+
+    
+      #about_a .p_tow{
+                            font-size:18px;
+                            font-weight:bold;
+                            padding-bottom: 13px;
+                            color:#000;
+                   }
+
+         #about_a i{
+                            font: inherit;
+                            font-size:18px;
+                  }
+      /**************about_us结束*************************/
+      /**************strength开始*************************/
+        #strength{
+                            width: 100%;
+                            background:#f3f3f3;
+                            margin-top:20px;
+                            position: relative;
+
+
+
+
+                 }
+       #strength .h3_a{
+                            width: 100%;
+                            text-align: center;
+                            font-size: 1.75em;
+                            font-weight: normal;
+                            color: #000;
+                            padding-top:45px;
+
+                   } 
+#strength .strength_box{
+                            /*width: 1200px;*/
+                            width: 88%;
+                            height: 497px;
+                            margin: 0 auto;
+
+                    }    
+      .strength_box span{     
+                            width:78px;
+                            height: 1px;
+                            background: #ccc;
+                            display: block;
+                            margin: 10px auto;
+
+                    }
+#strength .strength_ul{        
+                            /*width: 1164px;*/
+                            margin: 46px auto;
+                          
+
+                   }
+#strength .strength_ul li{         
+                            width: 25%;
+                            height: 214px;
+                            float: left;
+                            margin-top: 105px;
+                            transition: 2s;
+
+                        }
+   
+#strength .strength_ul li img{
+                           width: 98px;
+                           height: 98px;
+                           display: block;
+                           margin: 0 auto;
+                  }
+#strength ul li .str-show-title{     
+                           
+                           margin-top: 28px;
+                           text-align: center;
+                           font-size: 1.5em;
+                           font-weight:normal;
+
+                  }
+
+  .strength_ul p{    
+                           width: 88%;
+                           text-align: center;
+                           margin: 20px auto;
+                           color: #555555;
+
+
+                  }
+      
+        #str_but{
+
+                           width: 194px;
+                           height: 42px;
+                           border:1px solid #888;
+                           margin: 0px auto;
+                           position: relative;
+                           
+               }
+      #str_but i{          display: block;
+                           width: 100%;
+                           height: 100%;
+                           text-align: center;
+                           cursor: pointer;
+                           font-size: 18px;
+                           line-height:42px;
+                           color: #000;
+                           position: absolute;
+                           top:0;
+                           left: 0;
+
+
+
+                   }
+#str_but .str_but_bg{
+
+                            display: block;
+                            width: 0%;
+                            height: 100%;
+                            position: absolute;
+                            top:0;
+                            left: 0;
+                            transition: 0.5s;
+
+                 }
+        .str_bg{
+                           display: block;
+                           width: 100%;
+                           height: 100%;
+                           position: absolute;
+                           background: #888;
+                           top:0;
+                           left: 0;
+                           transition: 0.5s;
+
+               }
+       #clients{
+                           width: 100%;
+
+                            
+                }
+#clients .clients_box{
+
+                           width: 1200px;
+                           height: 168px;
+                           margin: 0 auto;
+
+               }
+  .clients_ul_a{         
+                           width: 1068px;
+                           height: 77.59px;
+                           margin-bottom: 5px;
+                          
+                           
+               }
+.clients_ul_a li img{
+                           width:180px;
+                           height: 77.59px;
+                           float: left; 
+
+               }
+.clients_ul_b li img{
+                           width:180px;
+                           height: 77.59px;
+                           float: left; 
+
+               }
+    #capabilites{
+                           width: 100%;
+                           height: 1204px;
+                           position: absolute;
+                           top:497px;
+                           left: 0;
+                           transition: 1s;
+                       
+
+               }
+       #cpa_img{           
+                           width: 100%;
+                           height: 509px;
+                           background:#b3d6cd; 
+                           overflow: hidden;
+                           
+
+             }
+  #cpa-content{             
+                           width: 100%;
+                           height: 665px;
+                           background: #fff;
+
+              }
+   .cpa_h3 h3{             
+                           width: 100%;
+                           height: 100%;
+                           padding-bottom: 5px;
+                           text-align: center;
+                           font-size: 1.75em;
+                           font-weight: normal;
+                           text-align:center;
+                           color: #fff;
+                           padding-top: 44px;
+
+             }
+.cpa_h3 span{
+                           display: block;
+                           width: 76px;
+                           height: 1px;
+                           background: #d9ebe6;
+                           margin:0 auto;
+                           margin-bottom: 4px;
+
+
+             }
+.cpa_img_box{             
+                           width:856px;
+                           height:430px;
+                           margin: 0 auto;
+                           position:relative;
+                         
+
+           }
+     #cpa_a{               
+                           
+                           width:42.416667%;
+                           height:261px;
+                           position: absolute;
+                           z-index: 1;
+                           top:160px;
+                           left:0px;
+
+
+          }
+       .ca {
+                            width:392px;
+                            height:47px;
+                            margin-top:22px;
+                            transition: 1s;
+                            position: relative;
+                            opacity: 0;
+
+           }
+    .ca span{                  
+                            display: block;
+                            width:200px;
+                            height: 32px;
+                            background: #fff;
+                            color:#83b8aa;
+                            text-align: center;
+                            font-size: 18px;
+                            line-height: 32px;
+                            box-shadow: 1px 1px 4px #ddd;
+                            position: absolute;
+                            left:190px;
+                            top:0;
+
+
+                               
+
+          } 
+    .ca em{                
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            border-width: 15px 10px 0 0;
+                            border-style: solid;
+                            border-color: #fff transparent transparent #fff;
+                            position: absolute;
+                            bottom: 0; 
+                            left:190px;
+
+          }
+  .ca_img{                 
+                           
+                            width:100%;
+                            height: 100%;
+                      
+                           
+                           
+
+          }
+
+    #cpa_b{               
+                           width:55%;
+                           height:440px;
+                           position: absolute;
+                           top:-6px;
+                           left:190px;
+
+
+          }
+       .cb {
+                            width:474px;
+                            height:47px;
+                            margin-top:25px;
+                            transition: 1s;
+                            position: relative;
+                            opacity: 0;
+
+           }
+  .cb span{                  
+                            display: block;
+                            width:200px;
+                            height: 32px;
+                            background: #fff;
+                            color:#83b8aa;
+                            text-align: center;
+                            font-size: 18px;
+                            line-height: 32px;
+                            box-shadow: 1px 1px 4px #ddd;
+                            position: absolute;
+                            left:240px;
+                            top:0;
+
+
+                               
+
+          } 
+    .cb em{                
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            border-width: 15px 10px 0 0;
+                            border-style: solid;
+                            border-color: #fff transparent transparent #fff;
+                            position: absolute;
+                            bottom: 0; 
+                            left:240px;
+
+          }
+  .cb_img{                 
+                            
+                            width:100%;
+                            height: 100%;
+                         
+                           
+                           
+
+          }
+    #cpa_c{
+
+                            width:22.3%;
+                            height:291px;
+                            position: absolute;
+                            bottom:-7px;
+                            right:5%;
+
+         
+         }
+     .cc {
+                            width:258px;
+                            height:47px;
+                            margin-top:25px;
+                            transition: 1s;
+                            position: relative;
+                            opacity: 0;
+
+           }
+  .cc span{                  
+                            display: block;
+                            width:160px;
+                            height: 32px;
+                            background: #fff;
+                            color:#83b8aa;
+                            text-align: center;
+                            font-size: 18px;
+                            line-height: 32px;
+                            box-shadow: 1px 1px 4px #ddd;
+                            position: absolute;
+                            left:95px;
+                            top:0;
+
+
+                               
+
+          } 
+    .cc em{                
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            border-width: 15px 10px 0 0;
+                            border-style: solid;
+                            border-color: #fff transparent transparent #fff;
+                            position: absolute;
+                            bottom: 0; 
+                            left:95px;
+
+          }
+  .cc_img{                 
+                            
+                            width:100%;
+                            height:100%;
+                        
+                           
+                           
+
+          }
+   #cpa_d{
+
+                            width:12.4%;
+                            height:291px;
+                            position: absolute;
+                            bottom:-118px;
+                            right:-2%;
+
+         
+         }
+     .cd {
+                            width:150px;
+                            height:47px;
+                            margin-top:25px;
+                            transition: 1s;
+                            position: relative;
+                            opacity: 0;
+
+           }
+  .cd span{                  
+                            display: block;
+                            width:140px;
+                            height: 32px;
+                            background: #fff;
+                            color:#83b8aa;
+                            text-align: center;
+                            font-size: 18px;
+                            line-height: 32px;
+                            box-shadow: 1px 1px 4px #ddd;
+                            position: absolute;
+                            left:8px;
+                            top:0;
+
+
+                               
+
+          } 
+    .cd em{                
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            border-width: 15px 10px 0 0;
+                            border-style: solid;
+                            border-color: #fff transparent transparent #fff;
+                            position: absolute;
+                            bottom: 0; 
+                            left:8px;
+
+          }
+  .cd_img{                 
+                            
+                            width:100%;
+                            height:100%;
+                            
+
+         }
+         /********************************#cpa_content区域****************************************/
+#cpa_content{
+                           
+                            
+                            width:88.9%;
+                            height:650px;
+                            margin:0 auto;
+                            transition: 2s;
+                            margin-bottom: 200px;
+                          
+
+
+
+            }           
+    .ul_cpa{
+                            width:100%;
+                            height: 100%;
+                            padding-top:28px;
+
+
+           }
+
+ .ul_cpa li{
+                            
+                            width: 45.833333%;
+                            height: 255px;
+                            float: left;
+                            padding: 2%;
+                            margin-top:80px;
+                            transition: 2s;
+
+
+           }     
+    .img_tp{
+
+
+                            width:54px;
+                            height:54px;
+                            background: blue;
+
+           }
+.img_tp img{
+                            width:54px;
+                            height:54px;
+
+           }
+   .text_li{
+                            
+                            width:434px;
+                            height: 202px;
+
+
+           }
+.text_li h3{
+                            font-size: 1.5em;
+                            font-weight: normal;
+                            padding-left: 20px;
+
+                                
+
+           }
+.text_li p{                 
+                            color: #555;
+                            letter-spacing: 1px;
+                            line-height: 20px; 
+                            padding:10px 0 0 20px;
+
+          }
+ #contact{                  
+                            width:100%;
+                            height: 595px;
+                            background:#000;
+                            position:relative;
+
+         }
+.message_box{                
+                            width:451px;
+                            height: 500px;
+                            background:#222;
+                            position: absolute;
+                            top:74px;
+                            right:46px;
+
+          }
+
+       .box_p p{
+                            width:405px;
+                            margin:0 auto;
+                            border-bottom: 1px solid #454545;
+               }
+      .title_a{
+                            margin: 33px 0 12px 0;
+                            text-align: center;
+                            font-size: 1.75em;
+                            color:#fff;
+
+             }
+
+.message_box span{               
+                            
+                            display: block;
+                            width: 76px;
+                            text-align: center;
+                            margin: 0 auto;
+                            border-top: 1px solid;
+                            border-top-color: #454545;
+                            margin-bottom: 22px;
+
+          }
+.Studio_name{
+
+                            width:405px;
+                            font-size: 18px;
+                            line-height: 59px;
+                            color:#aaa;
+
+
+
+           }
+#Studio_p{                  
+                            
+                            padding-top: 12px;
+                            line-height: 1.5em;
+                            padding-bottom: 10px;
+                            letter-spacing: 1px;
+
+         }
+#Studio_a{ 
+
+                            font-size: 24px;
+                            color: #fff;
+
+         }
+#contact img{               
+                            width:100%;
+                            height: 100%;
+
+            }
+.Contact_box{
+                            
+                            width:407px;
+                            height:143px;
+                            margin:auto;
+
+            }
+.Contact_left{              
+                            
+                            width:262px;
+                            height: 119px;
+                            padding-top:24px; 
+
+
+            }
+  #Business,#Hr{                
+                            
+                            width:238px;
+                            height: 44px;
+                            border:1px solid #888;
+                            margin-bottom: 10px;
+                            position: relative;
+                            line-height: 44px;
+                            text-align: center;
+                            font-size: 18px;
+                            color: #aaa;
+                            cursor:pointer;
+
+          }
+
+.ewcode_right{              
+                            
+                            width:100px;
+                            height: 100px;
+                            margin-top:24px;
+
+          }
+  .Busi_bg{                 
+                            display: block;
+                            width:0%;
+                            height:100%;
+                            transition: 1s;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+
+          }               
+#Business i{
+                           
+                            width: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+
+            }
+      #Hr i{
+                           
+                            width: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+
+            }
+
+ 
