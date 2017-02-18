@@ -1,7 +1,5 @@
 # ruanweiblue.github.io
-慕白 CSDN-博客
-<meta charset="UTF-8">
-<title>Document</title>
+###慕白 CSDN-博客
 <style>
 body{padding:0;margin:0;}
 ul,li{list-style: none;padding:0;margin:0;}
@@ -15,20 +13,19 @@ a{color:#000;font-size:14px;text-decoration: none;font-family: "宋体";}
 .nav_num li:hover{background: #ccc;}
 .nav_list li:hover{background: #ccc;}
 </style>
-</head>
 <body>
    <div id="nav">
 		<ul class="nav_list">
-	         <li><a href="javascript:;">新随笔</a></li>
-	         <li><a href="javascript:;">联系</a></li>
-	         <li><a href="javascript:;">订阅</a></li>
-	         <li><a href="javascript:;">管理</a></li>
+	          <li><a href="javascript:;">新随笔</a></li>
+	          <li><a href="javascript:;">联系</a></li>
+	          <li><a href="javascript:;">订阅</a></li>
+	          <li><a href="javascript:;">管理</a></li>
 		</ul>
 		<ul class="nav_num">
-	         <li><a href="javascript:;">随笔-0</a></li>
-	         <li><a href="javascript:;">文章-0</a></li>
-	         <li><a href="javascript:;">评论-0</a></li>
+	          <li><a href="javascript:;">随笔-0</a></li>
+	          <li><a href="javascript:;">文章-0</a></li>
+	          <li><a href="javascript:;">评论-0</a></li>
 		</ul>
   </div>
 </body>
-</html>
+
