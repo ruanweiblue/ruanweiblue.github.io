@@ -6,32 +6,71 @@
 <style>
 body,h1,h2,h3,h4,h5{padding:0;margin:0;}
 ul,li{list-style: none;padding:0;margin:0;}
-h1{height:50px;background:#666;}
+body{overflow: hidden;}
+h1 a{color:#c9cacc;font-size:30px;}
+h1{background:#48525e;height: 100px;line-height: 100px;padding-left:20px;border-bottom: 1px solid #000;}
+.fl{float: left;}
+.fr{float: right;}
+.clearFix:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+/*导航*/
 #nav{height: 30px;background:#f6f6f6;position: relative;}
-.nav_num, .nav_list{height: 30px;position: absolute;top:0;left:39%;}
-#nav li{height: 30px;float: left;margin-left:20px;line-height: 30px;padding:0 5px 0 5px;}
+.nav_num, .nav_list{width: 300px;height: 30px;position: absolute;top:0;left:39%;}
+#nav li{height: 30px;float: left;margin-left:5%;line-height: 30px;padding:0 5px 0 5px;}
 a{color:#000;font-size:14px;text-decoration: none;font-family: "宋体";}
 .nav_list li a{font-weight:bold;}
 .nav_num{position: absolute;top:0;left:78%;color:#666;}
 .nav_num a{font-size:12px;color:#666;}
 .nav_num li:hover{background: #ccc;}
 .nav_list li:hover{background: #ccc;}
+.content_box{margin-left: 10px;}
+/*左侧栏*/
+#sideBar{width:300px;height:600px;;border: 1px solid #dddddd;background:#faf9f7;}
+#sideBar .sideBar_border{width:286px;height:586px;border: 1px solid #ddd;}
+/*文章内容块*/
+#content{width:77%;height: 600px;margin:0 auto;position: relative;}
+#content .essay{width:80%;height:90%;position: absolute;top:0;left:10%;background:#fff;border: 1px solid #ddd;border-radius:2%;}
+/*日历*/
+#Calendar{width:8%;height:30%;background:#48525e;position: absolute;top:13%;left:1%;}
 </style>
 </head>
 <body>
-   <h1>慕白 CSDN-博客</h1>
+
+  <h1><a href="javascript:;">慕白 CSDN-博客</a></h1>
+  <!-- 导航开始 -->
    <div id="nav">
-		<ul class="nav_list">
+		<ul class="nav_list clearFix">
 	         <li><a href="javascript:;">新随笔</a></li>
 	         <li><a href="javascript:;">联系</a></li>
 	         <li><a href="javascript:;">订阅</a></li>
 	         <li><a href="javascript:;">管理</a></li>
 		</ul>
-		<ul class="nav_num">
+		<ul class="nav_num clearFix">
 	         <li><a href="javascript:;">随笔-0</a></li>
 	         <li><a href="javascript:;">文章-0</a></li>
 	         <li><a href="javascript:;">评论-0</a></li>
 		</ul>
+  </div>
+  <!-- 导航结束 -->
+  <div class="content_box clearFix">
+	  <!-- 左侧栏 开始-->
+	   <div id="sideBar" class="fl">
+	      <div class="sideBar_border">
+
+	      </div>   
+	   </div>
+	  <!-- 左侧栏 结束-->
+	  <!-- 文章内容块开始 -->
+	  <div id="content" class="fl">
+	     <!-- 日历 -->
+	     <div id="Calendar"></div>
+	     <!-- 日历结束 -->
+         <div class="essay"></div>
+	  </div>
+	  <!-- 文章内容快结束 -->
   </div>
 </body>
 </html>
