@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>无标题文档</title>
+<style>
+html,body{width:100%;height:100%;margin:0;padding:0;/*overflow:hidden;*/font-family:"微软雅黑"}
+ul,li,p,pre,ol,h2{list-style:none;margin:0;padding:0;}
+a{text-decoration:none;}
+em{font-style:normal;}
+.clear:after{clear:both;content:'';display:block}
+.clear{zoom:1;}
+.wsy-bg{width:100%;height:100%;position:absolute;top:0;left:0;}
+.wsy-bg img{width:100%;height:100%}
+.wsy_wrap_inner{width:662px;overflow:hidden;background:#fff;min-height:200px;position:absolute;
+left:0;top:0;overflow:hidden}
+.wsy-title{margin-left:15px;border-bottom:1px solid #aee5fc;width:100%;
+height:35px;background:#f3f9fb;}
+.wsy-title li{width:84px;padding:0 10px;height:35px;line-height:35px;text-align:center;float:left;}
+.wsy_wrap_inner ul li.active{border-right:1px solid #aee5fc;background:#fff;height:36px;position:relative;border-bottom:1px;}
+.wsy-soso{resize:none;overflow:auto;width:427px;height:73px;padding:4px 8px;font-size:14px;
+border:1px solid #aee5fc;margin-left:15px;margin-top:15px;background:url("text-bg.png") repeat-x; }
+.sub-bm{width:150px;margin:10px 0 0 100px;}
+.sub-bm input{width:145px;height:33px;border:none;color:#fff;margin-left:55px;
+border-radius:5px;font-weight:bold;       
+				background:-webkit-linear-gradient(top,#7adce5,#71d2db);
+				background: -moz-linear-gradient(top,#fae0e1,#e8c4c2)
+}
+.sub-bm input:hover{box-shadow: 0px 3px 1px 1px #7dcdd4;background: -webkit-linear-gradient(top,#cefbff,#71d2db);}
+.wsy-box{margin-bottom:-1px;position:relative;padding:0 0 10px 70px;margin-left:15px;}
+.avatar{position:absolute;width:50px;height:50px;left:0;top:0;box-shadow: 0 1px 3px rgba(0,0,0,.3);
+border-radius:4px;}
+.avatar img{width:50px;height:50px;}
+.wsy-boxct{border:1px solid #aee5fc;background:#eff9fb;width:551px;padding-bottom:33px;}
+.wsy-box{position:relative;border-radius:5px;}
+.wsy-bd{position:relative;padding:9px 15px;}
+.arr-main{position:absolute;width:0;height:0;left:-16px;top:15px; font-size:0;border-width:8px;border-style:solid;border-color:transparent;border-right-color:#aee5fc;}
+.wsy-box .arr{width:0;height:0; position: absolute;left:-6px;top:-7px;font-size:0;border-width:7px;border-style:solid;border-color:transparent;border-right-color:#eff9fb;
+}
+.lists{margin-top:22px;}
+.s-author{color:#218e9e;font-size:13px;}
+.wsy-content{display:inline;white-space:pre-wrap;text-align:-webkit-match-parent;line-height:25px;
+font-family:'微软雅黑';font-size:13px;}
+.wsy-content img{vertical-align:bottom;}
+.wsy-ft{padding:3px 15px 6px;height:20px;font-size:13px;}
+.wsy-ft .info{float:left;}
+.c_tx3{color:#9B9B9B}
+.wsy-ft .op{float:right;}
+.wsy-ft .op a{margin-left:10px;float:left;color:#218e9e}
+.items{display:inline-block;position:relative;width:60px;background:#fff;text-align:center;
+border:1px solid #aee5fc}
+.items li{height:24px;line-height:24px;}
+.ui_trig{font-size:0;border-width:6px;border-style:solid;border-color:transparent;border-top-color:#139da9;position:absolute;right:10px;top:7px;}
+.box_extra{position:relative;border-top:1px solid #aee5fc;}
+.box_arrs{left:30px;top:-16px;position:absolute;width:0;height:0;font-size:0;border-width:8px;border-style:solid;border-color:transparent;border-bottom-color:#aee5fc;}
+.boxs-arr{width:0;height:0; position: absolute;left:-6px;top:-4px;font-size:0;border-width:6px;border-style:solid;border-color:transparent;border-bottom-color:#eff9fb;}
+.feed_like{font-size:13px;text-indent:20px;height:32px;line-height:32px;display:none;}
+.feed_like i{display:inline-block;width:17px;height:18px;background:url("f_icon.png") no-repeat;
+vertical-align:-5px;margin-right:4px;}
+.mod_comment ul{padding-left:15px;overflow:hidden;position:relative;}
+.mod_comment ul li{padding:5px 0;}
+.mod_comment a{color:#218e9e}
+.comments_item_bd{padding-left:45px;position:relative;font-size:13px}
+.mod_comment{position:relative;}
+.ui_avatar{position:absolute;left:0;top:5px;}
+.ui_avatar img{width:35px;height:35px;}
+.comments_box,.mod_commnets_poster_trigger{position:relative;}
+.mod_commnets_poster_trigger{width:490px;border:1px solid #aee5fc;min-height:35px;
+margin:0 auto;padding:0 0 0 10px;background:#fff;margin-top:12px;}
+.mod_comment .c_txt3{color:#9B9B9B}
+.textinput a{cursor:text;outline:none;display:block;line-height:32px;font-size:13px;}
+.mod_commnets_poster_trigger:hover{border:1px solid orange}
+.mod-quick-comment{width:72px;height:35px;position:absolute;right:0px;top:0px;text-align:center;
+border-left:1px solid #aee5fc;}
+.mod-quick-comment i{width:16px;height:16px;display:inline-block;background:url("say.png") -425px -85px no-repeat;margin-top:8px;
+}
+.mod-quick-comment a{display:block;height:28px;line-height:35px;cursor:pointer;font-size:13px;
+color:#9B9B9B;}
+.mod-quick-comment a span{display:none;}
+.mod-quick-comment:hover .line-list{display:block}
+.mod-quick-comment:hover a span{display:block;}
+.mod-quick-comment:hover a i{display:none}
+.line-list{position:absolute;top:100%;right:-1px;border: 1px solid #D9D9D9;overflow:hidden;
+background-color:#F6FBFE;width:258px;display:none;z-index:5}
+.line-list ul{padding-left:0;}
+.mod_comment .line-list li{height:42px;width:64px;border-width: 0 0 1px 1px;border-color: #E9E9E9;
+border-style: solid;font-size: 0;float:left;padding:0;}
+.line-list li:nth-child(3){width:103px;}
+.line-list li:nth-child(4),.line-list li:nth-child(2){width:87px;}
+.line-list li:nth-child(5){width:168px;}
+.line-list li a{display:block;height:42px;}
+.line-list li a:hover{background:#eee;}
+
+.comments_box{margin-top:10px;}
+.commentBox{position:relative;width:502px;padding-left:15px;display:none}
+.comments_poster_bd{position:relative;}
+.comments_poster_bd img{vertical-align:bottom;}
+.comments_box_cont{min-height:54px;padding-bottom:22px;padding:2px 6px;word-wrap: break-word;
+outline: none;cursor: text;border:1px solid #aee5fc;background:#fff;box-shadow:1px 1px 3px #999 inset;
+font-size:13px;}
+.comments_content img{vertical-align:bottom;}
+.number_left{position: relative;z-index:3;float:right;width:70px;height:20px;padding-right:5px;
+margin-top:-25px;text-align: right;font-size: 14px;font-family:Georgia,Tahoma,Arial;color:#9B9B9B}
+
+.comments_poster_ft{position:relative;padding-top:5px;height:24px;}
+.gb_bt{width:72px;height:28px;display:inline-block;line-height:20px;margin-left:6px;border:none;border-radius:2px;border:1px solid #0c77ae;font-size:14px;
+background:#1990ce;color:#fff}
+.comments_poster_op{float:right;}
+.qzaddons{position:relative;float:left;}
+.qzaddons a{display:inline-block;width:80px;height:32px;line-height:30px;font-size:13px;color:#999}
+.qzaddons a i{display:inline-block;width:16px;height:16px;overflow:hidden;background:url("mod_comments.png") -2px -2px no-repeat;margin-right:8px;}
+.qzaddons ul{position:absolute;z-index:5;background:#f6fbfe;left:-13px;top:-72px;display:none;width:105px;height:74px}
+.qzaddons ul li{float:left;width:34px;height:24px;text-align:center;margin:0 0 -1px -1px;border:1px solid #D7D7D7}
+.qzaddons ul li a{width:34px;height:34px;}
+.login-box{	position:absolute;left:50%;top:50%;margin:-197px 0 0 -192px;width:384px;height:295px;
+z-index:2;
+			-webkit-transform-style:preserve-3d;
+			-webkit-perspective:800px;
+}
+.login-main{width:384px;height:295px;}
+.q-login{padding-top:140px;}
+.q-login,.qs-login{width:384px;height:155px;
+background:url("login.png") no-repeat;}
+.q-portrait{float:left;padding-left:20px;}
+.q-form{float:left;padding-left:15px;}
+.q-form li{margin-bottom:8px;}
+.q-text,.q-pass{width:186px;height:23px;border:1px solid #6f8c9f;text-indent:10px}
+.sub-main{width:158px;height:32px;margin:0 auto;padding-top:15px;clear:both;}
+.q-form ul li{font-size:14px;}
+.sub-main input{width:158px;height:32px;border-radius:6px;border:1px solid #b7bec6;font-family:'微软雅黑';padding-left:10px;}
+.sub-main input:hover{background:#e5e8ec}
+.qs-login{background:url("logins.png") repeat-x;border-radius:8px;box-shadow:2px 2px 4px #888888;
+position:absolute;display:none;height:295px;}
+.qs-box input{width:200px;height:18px;}
+.qs-sex{font-size:13px}
+.qs-login h2{text-align:center;color:#fff;line-height:80px;}
+.qs-form{width:280px;margin:0 auto;padding-top:10px;}
+.qs-form em{display:inline-block;width:65px;font-size:13px;}
+.qs-form li{height:35px;line-height:35px;background:none}
+.qs-sub{bottom:7px;right:9px;position:absolute;}
+.qs-sub input{width:65px;height:22px;background:#f4fafd;border:1px solid #879195;border-radius:3px;}
+.q-register{color:#0c7ab9;text-shadow:2px 2px 6px #fff;font-size:15px;right:26px;bottom:131px;position:absolute;}
+.q-close{width:34px;height:22px;position:absolute;right:3px;top:1px;}
+
+.talk-alert{width:662px;height:610px;overflow:hidden;position:relative;margin:20px auto;
+border:1px solid #465e76;border-radius:4px;background:#fff}
+.talk-cont{position:relative;height:100%;overflow:hidden;}
+.talk-title{background:url("talk-alert.png") no-repeat;height:29px;line-height:29px;}
+.talk-title h2{text-align:center;font-size:16px;font-weight:normal;font-family:'微软雅黑';
+color:#fff;}
+.talk-scroll{width:9px;background:#d8d8d8;height:560px;position:absolute;right:2px;top:40px;
+z-index:4;border-radius:4px;cursor:pointer;}
+.talk-scroll span{height:60px;width:6px;background:#e7e7e7;border:1px solid #b7b7b7;
+position:absolute;top:0;left:0;border-radius:4px;cursor:pointer;}
+</style>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script>
+$(function(){
+
+
+
+var json = [
+				{
+					'name'    : '小王',  
+					'content' : '哪有什么不合适，不就是不喜欢吗。 哪有什么不可能，不就是没能力',
+					'date'    : '2013-10-05 19:30:03',
+					'icon'    :  ''
+					'page'    :  [
+						{
+							'name'    : '生命在於折騰',
+							'content' : '大宝，你看的很开呀',
+							'date'    : '2013-10-05 19:50:03',
+							'childs'  : [
+								{
+									'names'    : '小王', 
+									'contents' : '淡定',
+									'dates'    : '2013-10-05 20:30:03'
+								}
+							]
+						}
+					]
+				},
+				{
+					'name'    : '吴菂超',  
+					'content' : '看了这么多年的新闻联播，我发现，习近平出门带夫人，而胡锦涛出门都带温家宝。',
+					'date'    : '2013-10-05',
+					'icon'    :  ''
+				},
+				{
+					'name'    : '醉倒翁',  
+					'content' : '  如果两个人想好好的在一起，必须懂得时间的珍惜和彼此安排，我很想说，多想你和我一起吃饭。只要开开心心的。哪怕是路边摊也可以吃的满足。手牵手，快快乐乐的压马路。我要的，在我难过的时候，什么话都可以跟你说。一句亲爱的，别难过，你还有我。心里的难过就会好很多很多。......',
+					'date'    : '2013-10-05 08:30:03',
+					'icon'    :  ''
+					'page'    :  [
+						{
+							'name'    : '双胞胎',
+							'content' : '大宝，你看的很开呀',
+							'date'    : '2013-10-05 09:30:03',
+							'childs'  : [
+								{
+									'names'    : '醉倒翁 回复 双胞胎', 
+									'contents' : '呵呵，这是基本的！',
+									'dates'    : '2013-10-01 09:50:03'
+								}
+							]
+						},
+						{
+							'name'    : '雨淋湿了╮我的眼',
+							'content' : '孩子，，加油，，，',
+							'date'    : '2013-10-05 10:40:03',
+							'childs'  : [
+								{
+									'names'    : '醉倒翁 回复 雨淋湿了╮我的眼', 
+									'contents' : '你找打？',
+									'dates'    : '2013-10-01 10:43:03'
+								}
+							]
+						},
+						{
+							'name'    : '你若安好 便是晴天',
+							'content' : ' 切！ 你妹的 ，穿着皮鞋干农活，你丫就忽悠吧！1',
+							'date'    : '2013-10-05 11:40:03'
+						}
+					]
+				},
+
+];
+
+	for(var i=0;i<json[1].length;i++){
+		for(var j=0;j<json[1][i].page.length;j++){
+			$('#ul1').append('<li class="li'+j+'"></li>')
+			for(var k=0;k<json[1][i].page[j].childs.length;k++){
+				$('.li'+j+'').append('<h2>'+json[1][i].page[j].childs[k].names+'</h2>')
+			}
+		}
+	}
+		
+
+	 
+
+});
+</script>
+</head>
+<ul id="ul1">
+</ul>
+<body>
+</body>
+</html>
