@@ -1,0 +1,40 @@
+h1,ul,li,p,dl,dt,dd,h3,h2,h4,h5,dl,dt,dd,form{margin: 0;
+                                              padding: 0;
+	
+}
+body{margin: 0;padding: 0;
+	
+}
+img{
+	  border:none;
+	  vertical-align: top;
+	  margin: 0;
+	  padding: 0;
+}
+
+input{
+	  padding:0;
+	  margin:0;
+	  border: 1px solid #4791ff;
+	 
+
+}
+ul,li{list-style: none;
+	
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearFix:after{
+	content: "";
+	display: block;
+	clear:both;
+}
+a{color:#999;
+  text-decoration: none;
+  font-family:verdana,Arial;
+  font-size:12px;
+}
