@@ -1,0 +1,21 @@
+/*清除默认样式*/
+body,p{margin: 0px;padding: 0px;}
+h1,h2,h3,h4,h5,h6,span{padding: 0px;margin: 0px;}
+
+ul,li{list-style: none;margin: 0px;padding: 0px;}
+
+a{text-decoration: none;color: #000;}
+
+img{border: none; vertical-align: top;}
+
+i{font: inherit;}
+
+.fl{float: left;}
+
+.fr{float: right;}
+
+.clearFix:after{
+	content:"";
+	display: block;
+	clear: both;
+}

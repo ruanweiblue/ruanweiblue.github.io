@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>无标题文档</title>
+<style>
+ul,li,p{padding:0;margin:0;list-style:none}
+em{font-style:normal;}
+.studentMBox{width:381px;height:274px;position:absolute;left:200px;top:100px;
+background:#d0f4fa;border-radius:4px;border:1px solid #fff;
+			-webkit-transition: .5s box-shadow;
+			box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+			transition: .5s box-shadow;
+			font-family:'微软雅黑';
+}
+.studentMBox:hover{box-shadow: 7px 8px 10px rgba(0,0,0,0.1);}
+textarea{resize: none;overflow:auto}
+.studentHead{background:#fff;height:38px;border-radius: 4px 4px 0 0;padding-top:3px;line-height:38px;}
+.studentMBox p{padding-top: 3px;}
+.userInput{height:18px;width:266px;
+}
+.contText{width:276px;height:73px;}
+.showIn{line-height:18px;border:none;padding: 3px 5px 2px;border-radius:3px;line-height:18px;margin-bottom:10px;border:none;padding: 3px 5px 2px;background:#b6eff4;border:1px solid #a0dfe5;box-shadow:1px 1px 2px #83d6de inset;}
+.studentHead{box-shadow:0 6px 10px -6px rgba(0,0,0,0.1);line-height:38px;color: #585858;font-size:14px;
+text-indent:24px;}
+.messageTable{padding: 11px 23px 22px 9px;}
+.messageTable li{overflow:hidden;}
+.messageTable em{line-height:32px;width:53px;display:inline-block;float:left;text-align:center;
+color:#629aa4;font-size:12px;}
+.messageTable p{float:left;}
+.sub-bm input{width:145px;height:33px;border:none;color: #fff;margin-left:55px;
+border-radius:5px;font-weight:bold;       
+				background:-webkit-linear-gradient(top,#7adce5,#71d2db);
+				background: -moz-linear-gradient(top,#fae0e1,#e8c4c2)
+}
+.sub-bm input:hover{box-shadow: 0px 3px 1px 1px #7dcdd4;background: -webkit-linear-gradient(top,#cefbff,#71d2db);}
+
+#geList{width:450px;height:36px;line-height:36px;position:absolute;right:140px;top:100px;
+		box-shadow: 0 6px 10px rgba(0,0,0,0.1);background: #fff;border:1px solid #fff;
+		font-size:14px;text-indent:24px;color:#585858;font-family:'微软雅黑';
+}
+.messageHead span{float:right;padding-right:10px;}
+.messageHead span a{color:#d34949;padding-left:5px;}
+.mes-ico{border:8px solid rgba(255,255,255,0);border-top-color:rgba(255,255,255,1);top:36px;left:87px;position:absolute;}
+</style>
+</head>
+
+<body>
+<aside class="studentMBox">
+	<header class="studentHead">留言板</header>
+	<form class="messageTable">
+		<ul>
+			<li>
+				<em>姓名</em>
+				<p><input type="text" required="required" class="userInput showIn" class="showIn" maxLength="20"></p>
+			</li>
+			<li>
+				<em>内容</em>
+				<p>
+					<textarea required="required" class="contText showIn" /></textarea>
+				</p>
+			</li>
+			<li>
+				<em>验证</em>
+				<p><input type="text" maxLength="4" class="showIn" required="required" /></p>
+				<span><img src=""></span>
+			</li>
+		</ul>
+		<div class="sub-bm">
+			<input type="submit" value="发表留言" />
+		</div>
+	</form>
+</aside>
+
+<aside id="geList">
+	<header class="messageHead">	
+		留言板<span>回复留言需<a href="#">登录</a></span>
+		<em class="mes-ico"></em>
+	</header>
+</adide>
+</body>
+</html>
