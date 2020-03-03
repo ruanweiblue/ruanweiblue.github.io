@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+	<style>
+		.box {
+			width: 9rem;
+			background: #000;
+			color: #fff;
+			margin: 0 auto;
+			padding: 1rem;
+		}
+		
+		p {
+			color: #fff;
+			text-align: center;
+			background: #009E94;
+		}
+	</style>
+
+	<body>
+		<div class="box">
+			<div>
+				于小鱼你个臭🥚，关不掉了吧，哈哈
+				<div>
+					<p onclick="fun()">关闭</p>
+				</div>
+			</div>
+			<div id="min-box">
+
+			</div>
+			<div id="min-box1">
+
+			</div>
+			<div id="min-box2">
+
+			</div>
+		</div>
+	</body>
+
+</html>
+<script>
+	var min, str;
+
+	function fun() {
+		alert("你这个小笨蛋～～～～")
+		min = document.getElementById('min-box');
+		str = '<div>' +
+			'于小鱼你个臭🥚，关不掉了吧，哈哈' +
+			'<div>' +
+			'<p id="p1">关闭</p>' +
+			'</div>' +
+			'</div>';
+		min.innerHTML = str;
+		var pid = document.getElementById('p1');
+		var min1 = document.getElementById('min-box1');
+		var num = 3;
+		pid.onclick = function() {
+			alert("你这个小笨蛋～～～～")
+			str = '<div>' +
+				'于小鱼你个臭🥚，关不掉了吧，哈哈' +
+				'<div>' +
+				'<p id="p2">关闭</p>' +
+				'</div>' +
+				'</div>';
+			min1.innerHTML = str;
+			var pid = document.getElementById('p2');
+			setInterval(function() {
+				pid.innerHTML = num + '秒后自动跳转'
+				num--;
+				if(num <= 0) {
+					window.location.href = "https://www.baidu.com/";
+				}
+			}, 1000)
+
+		}
+	}
+</script>
